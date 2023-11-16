@@ -1,0 +1,612 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'poppins';
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    /* background-color: salmon; */
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5;
+    /* border: 1px solid black; */
+
+}
+nav .lft-nav ,.rght-nav{
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+nav .lft-nav a,.rght-nav a{
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.lft-nav a:hover{
+
+    color: rgba(3, 169, 188, 0.728);
+}
+.rght-nav a:hover{
+
+    color: rgba(3, 169, 188, 0.728);
+}
+/* lft-nav a:hover {
+color: #333;
+} */
+.cntr-nav{
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.rght-nav button{
+    padding: 0.8vw 1.8vw;
+    background: none;
+    border: 1px solid blue;
+    border-radius: 50px;
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) ;
+    font-size: 0.8vw;
+}   
+.rght-nav button:hover{
+    color: white;
+    background-color: rgb(50, 115, 255);
+    cursor: pointer; 
+    /* The cursor property specifies the mouse cursor to be displayed when pointing over an element. */
+}
+.part-1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    font-family: 'Poppins';
+    /* background-color: #333; */
+}
+.part-1-img{
+    width: 95%;
+    height: 90vh;
+    background-color: #d1d1d1;
+    border-radius: 50px;
+    background-image: url(Creative.gif);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    
+}
+.part-1-img h1{
+    font-size: 4vw;
+    color: white;
+   text-align: start;
+}
+.part-1-img p{
+    font-size: 1vw;
+    color: white;
+}
+.part-1-img .prop-select{
+    width: 35vw;
+    height: 25vh;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.543);
+    backdrop-filter: rgba(255,255,255,0.563);
+    background: rgba(255, 255, 255, 0.708);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+     border-radius: 10px;
+
+}
+
+.prop-type{
+    height: 7vh ;
+    display: flex;
+    width: 100%;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+.prop-type a{
+   display: flex;
+   text-decoration: none;
+   color: #333;
+   font-size: 1vw;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5vw;
+   padding: 0.2vw 0vw; 
+   transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+.prop-select {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+.prop-select a:nth-child(1){
+    border-bottom: 1px solid #333;
+    color: #000;
+}
+.prop-select a:hover{
+
+color: rgba(3, 169, 188, 0.728);
+}
+
+.prop-option{
+gap: 2vw;
+outline: none;
+display: flex;
+align-items: end;
+justify-content: center;
+/* border: 1px solid black; */
+}
+
+.city, .type{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#city, #type{
+    margin-top: 1vh;
+    width: 10vw;
+    height: 5vh;
+    padding: 0px 2px;
+    border-radius: 20px;
+   border: 1px solid lightgray;
+   background-color: white;
+   /* border: 1px solid black; */
+}
+
+
+.prop-option button{
+    padding: 0.8vw 2.5vw;
+    border-radius: 50px;
+    background-color: none;
+    border: none;
+    background-color: blue ;
+    color: white;
+    font-size: 0.8vw;
+}
+.part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150vh;
+    flex-direction: column;
+    font-family: 'poppins';
+    
+    
+}
+.part-2 .top-part-2{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+   
+}
+/* Left Part container */
+.lft-top-part-2{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.5vh;
+    padding-left: 5vw;
+
+
+}
+.lft-top-part-2 h1{
+    
+    font-size: 3vw;
+    padding-top: 5vh;
+
+
+}
+
+.lft-top-part-2 p{
+    /* border: 1px solid black; */
+    width: 80%;
+}
+.btn{
+    padding: 0.7vw 1.5vw;
+    border: none;
+    background-color: blue;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 0.5);
+}
+.btn:hover{
+color: black;
+background-color: transparent;
+border: 1px solid grey;
+}
+
+.rght-top-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.rght-value{
+   
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 20vw;
+    height:25vh; 
+    background-color: aliceblue ;
+    border-radius: 10px;
+    padding: 2vw 1vw;
+    
+}
+.lft-value {
+    
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lft-value h1{
+color: blue;
+}
+.rght-vaalue{
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        gap: 1vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.lft-value h1, .rght-vaalue h1{
+    color: blue;
+    font-family: 'poppins';
+ 
+
+}
+.lft-value p, .rght-vaalue p{
+   color: #333;
+   display: flex;
+
+
+}
+/* Benefits of Choosing Us */
+.part-2 .btm-part-2{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0vw 7vw;
+    gap: 5vh ;
+    font-family: 'poppins';
+  
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.benefits .value h1{
+font-size: 2.5vw;
+}
+.benefits .value p{
+    width: 70%;
+}
+/* Part-3 */
+.part-3{
+    width: 100%;
+    height: 100vh;
+    
+
+}
+.img-part-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    height: 90vh;
+    background-image: url(ai2.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+}
+.comp-logo{
+width: 100%;
+height: 30vh;
+/* border: 1px solid black; */
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5vw;
+}
+.logo-c{
+    width: 15vw;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(1);
+    border: 1px solid blue;
+}
+.logo-c:nth-child(1){
+background-size: 70%;
+background-image: url(DB.png);
+background-size: cover;
+background-position: center;
+width: 10vw;
+height: 10vh;
+
+}
+.logo-c:nth-child(2){
+    background-size: 70%;
+    background-image: url(Meta.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 10vw;
+    height: 10vh;
+   
+}
+.logo-c:nth-child(3){
+    background-size: 70%;
+    background-image: url(facebook.png);
+    background-size: cover;
+    background-position: center;
+    width: 10vw;
+    height: 11vh;
+}
+.logo-c:nth-child(4){
+    background-size: 70%;
+    background-image: url(tesla.png);
+    background-size: cover;
+    background-position: center;
+    width: 10vw;
+    height: 10vh;
+            /* border: 1px solid black; */
+}
+/* ---------------part-4---------------------*/
+.part-4{
+    width: 95%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+.text-content-p-4{
+   
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 10vw;
+}
+.text-content-p-4 h1{
+   
+    font-family: 'poppins';
+    width: 50%;
+    font-size: 3vw;
+}
+.text-content-p-4 .text-2{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    gap: 2vh;
+  
+}
+.text-content-p-4 .text-2 p{
+    color: #757575;
+}
+.part-4-imgs{
+    padding-bottom:10vh ;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 5vw;
+    /* width of the part-4 section */
+    width: 120%;
+    /* height of the part-4 section */
+    height: 60vh;
+    
+}
+.part-4-imgs .img-p-4{
+    width: 25vw;
+    height: 30vh;
+    border-radius: 30px;
+}
+.img-p-4:nth-child(2n){
+    height: 50vh;
+}
+.img-p-4:nth-child(1){
+    background-image: url(yellow\ card.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-p-4:nth-child(2){
+    background-image: url(X1\ Credit\ card\ CG.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.img-p-4:nth-child(3){
+    background-image: url(Visa_Juan\ Mora\ Credit\ Card\ Design.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.img-p-4:nth-child(4){
+    background-image: url(Black\ card.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-p-4:nth-child(5){
+    background-image: url(yellow\ card.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.img-p-4:nth-child(6){
+    background-image: url(Black\ card.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.overlay-p-4{
+    display: flex;
+    align-items: end; 
+    justify-content: center;
+    font-size: 1.5vw;
+    color: #ececec;
+    width: 100%;
+    height: 100%;
+    /* Linear gradient on the part-4 images */
+    background:linear-gradient(#24242400,#3a3a3a1a,#252525) ;
+    border-radius: 20px;    
+}
+/* ----------------part-5-------------- */
+.part-5{
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 2vh;
+width: 100%;
+height: 100vh;
+
+
+}
+.part-5 h1{
+    font-size: 3vw;
+}
+.part-5 p{
+    width: 50%;
+    text-align: center;
+    font-size: 1.2vw;
+}
+.part-5 .img-part-5 {
+    width: 10vw;
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(ljwHDxsiah.gif);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.part-5 h5{
+    font-size: 1vw;
+    color: #333;
+}
+/* ----------footer---------- */
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(2, 6, 44);
+    padding: 2vw 5vw;
+
+}
+.top-footer{
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid wheat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btm-footer{
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     height: 40%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0vw;
+    
+}
+.link-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    
+}
+.btm-footer h4{
+    color: #fff;
+}
+.btm-footer a{
+    /* border: 1px solid wheat; */
+   
+    font-size: 0.8vw;
+    color: #ececec;
+    text-decoration: none;
+}
+ .lft-footer{
+    width: 50%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    /* border: 1px solid wheat; */
+}
+.rght-footer{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid wheat; */
+    color: white;
+    padding: 0vw 5vw;
+    gap: 2vh;
+} 
+.cta-footer{
+    display: flex;
+    align-items: start;
+    gap: 1vw;
+}
+.cta-footer i{
+    width: 24px;
+    height: 24px;
+}
+.cta-footer a{
+    
+    color: white;
+    text-decoration: none;
+}
