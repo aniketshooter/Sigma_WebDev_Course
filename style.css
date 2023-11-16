@@ -298,7 +298,7 @@ color: blue;
     width: 90%;
     height: 60vh;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-direction: column;
     padding: 0vw 7vw;
