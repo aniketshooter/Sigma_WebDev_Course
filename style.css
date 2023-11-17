@@ -135,7 +135,7 @@ color: #333;
     align-items: center;
 }
 .prop-select a:nth-child(1){
-    border-bottom: 1px solid #333;
+    /* border-bottom: 1px solid #333; */
     color: #000;
 }
 .prop-select a:hover{
@@ -247,8 +247,10 @@ border: 1px solid grey;
 .rght-value{
    
     display: flex;
-    align-items: start;
-    justify-content: start;
+    /* -----changed value--------- */
+    align-items: center;
+    justify-content: center;
+     /* -----changed value--------- */
     width: 25vw;
     height:30vh; 
     background-color: aliceblue ;
@@ -275,7 +277,8 @@ color: blue;
         height: 100%;
         flex-direction: column;
         display: flex;
-        align-items: end;
+        /* --------- align item changed from end to flex-start------- */
+        align-items: flex-start;
         justify-content: center;
         gap: 1vw;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -298,7 +301,7 @@ color: blue;
     width: 90%;
     height: 60vh;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0vw 7vw;
@@ -614,4 +617,196 @@ footer{
     
     color: white;
     text-decoration: none;
+}
+.ri-menu-line{
+    display: none;
+}
+
+@media (max-width:500px){
+    .html,body{
+        font-family: 'poppins';
+    }
+    nav .lft-nav a{
+        display: none;
+    }
+    nav .rght-nav a{
+        display: none;
+    }
+    .rght-nav button{
+        font-size: 3vw;
+        padding: 2vw 6vw;
+    }
+    .ri-menu-line{
+        display: inline;
+        font-size: 5vw;
+    }
+    .part-1-img h1 {
+        font-size: 9vw;
+    }
+    .part-1-img p{
+        font-size: 4vw;
+        
+    }
+    .part-1-img .prop-select{
+        width: 80vw;
+        height: 40vh;
+    }
+    .prop-type a{
+        font-size: 2.8vw;
+
+    }
+    .prop-option{
+        font-size: 4vw;
+        align-items: start;
+        flex-direction: column;
+    }
+    #city,#type{
+        width: 70vw;
+    }
+    .prop-option button{
+        font-size: 3vw;
+        padding: 2vw 6vw;
+
+    }
+    .part-2 {
+        height: auto;
+        min-height: 100vh;
+    }
+    .part-2 .top-part-2{
+        height: 100vh;
+        flex-direction: column;
+    }
+    .lft-top-part-2{
+        width: 100%;
+
+    }
+    .lft-top-part-2 h1{
+        font-size: 8vw;
+        
+    }
+    .btn{
+        font-size: 3vw;
+        padding: 2vw 6vw;
+
+    }
+    .rght-top-part-2{
+        width: 84%;
+        padding-left: 5vw;
+    }
+
+    .rght-value{
+        width: 95%;
+        height: 40vh;
+        padding: 0vw 5vw;
+    }
+    .lft-value h1{
+        font-size: 8vw;
+    }
+    .lft-value{
+        gap: 15vw;
+        width: 96%;
+    }
+    .lft-value-2{
+        padding: 0vw !important;
+    }
+    .lft-value:nth-child(2){
+        padding: 0vw 5vw;
+    }
+    .rght-vaalue{
+        gap: 15vw;
+        padding: 0vw 5vw;
+    }
+    .part-2 .btm-part-2 {
+        height: 114vh;
+        gap: 5vh;
+    }
+    .benefits{
+        height: 75vh;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .benefits .value h1{
+        font-size: 8.5vw;
+    }
+    .benefits .value p{
+        width: 100%;
+        font-size: 4vw;
+    }
+    .img-part-3{
+        height: 52vh;
+    }
+    .logo-c{
+        background-size: 120% !important;
+    }
+    .comp-logo{
+        gap: 7vw;
+    }
+    .part-4{
+        height: 50vh;
+    }
+    .text-content-p-4{
+        flex-direction: column;
+        width: 175%;
+    }
+   
+    .text-content-p-4 h1{
+        font-size: 8vw;
+    }
+    .part-4-imgs{
+        
+        height: 60vh;
+    }
+    .part-4{
+        gap: 5vh;
+    }
+    .part-4-imgs .img-p-4{
+        width: 30vw;
+    }
+    .overlay-p-4{
+        font-size: 4vw;
+    }
+    .part-4-imgs{
+        width: 216%;
+    }
+    .part-5 h1 {
+        font-size: 8vw;
+    }
+    .part-5 p {
+        width: 80%;
+        font-size: 5.2vw;
+    }
+    .part-5 .img-part-5 {
+        width: 43vw;
+    }
+    .part-5 h5 {
+        font-size: 5vw;
+    }
+    .footer{
+        flex-wrap: wrap;
+        height: 80%;
+    }
+    .cta-footer{
+        font-size: 5vw;
+    }
+    .cta-footer a{
+        font-size: 5vw;
+    }
+    .rght-footer h1{
+        font-size: 5vw;
+    }
+    .link-footer{
+       justify-content: start;
+        gap: 9vw;
+        padding: 10vw 10vw;
+        
+    }
+    .btm-footer {
+        height: 21%;
+        gap: 0vh;
+    }
+    .btm-footer a {
+        font-size: 3.8vw;
+    }
+
 }
